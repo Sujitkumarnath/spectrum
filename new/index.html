@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="icon" href="ren.png" type="image/png">
+</head>
+<title>Spectrum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" type="text/css" href="css/component2.css" />
+<script src="js/modernizr-2.6.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('iii.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <img src="rend.png" style="height: 100px;width:80px; margin-top: 0%;">
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">SPECTRUM</h1>
+
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-animate-bottom" align="center"  >15-16-17 March</p><br>
+    <a href="https://www.facebook.com/spectrum.nits/" target="_blank"><i class="fa fa-facebook-square" style="font-size:36px;right: 50%;left: 50%;"></i></a>
+  </div>
+
+  <div>
+    <a href="#" class="toggle"><button class="cn-button" id="cn-button" padding="100px">Modules</button></a>
+        <div class="cn-wrapper" id="cn-wrapper">
+          <ul>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#" class="toggle" id="cs" ><span>C S</span></a></li>
+            <li><a href="#" class="toggle" id="el" ><span>ELECTRONICS</span></a></li>
+            <li><a href="#" class="toggle" id="fun" ><span>F U N</span></a></li>
+            <li><a href="#" class="toggle" id="game" ><span>G A M E</span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+           </ul>
+        </div>
+
+
+    <script src="js/polyfills.js"></script>
+    <script src="js/demo2.js"></script>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    <a href="#" class="toggle" id="des" >Developers</a>
+  </div>
+</div>
+  
+ 
+
+ 
+
+        <dl class="list maki" id="a">
+            <dd><a href="../registration/reg.html" >Electrohunt</a></dd>
+            <dd><a href="../registration/reg1.html" >Avatar</a></dd>
+            <dd><a href="../registration/reg2.html" >Micromouse</a></dd>
+            <dd><a href="../registration/reg3.html" >Arduino Mania</a></dd>
+            
+        </dl>
+        <dl class="list maki" id="b">
+            <dd><a href="../registration/reg4.html" >Eniac</a></dd>
+            <dd><a href="../registration/reg5.html" >Byte_The_Code</a></dd>
+            <dd><a href="../registration/reg6.html" >Fast_web</a></dd>
+        </dl>
+        <dl class="list maki" id="c">
+            <dd><a href="../registration/reg7.html" >Quizopedia</a></dd>
+            <dd><a href="../registration/reg8.html" >Desi Kalakar</a></dd>
+            
+            <dd><a href="../registration/reg10.html" >Knock Your Heads</a></dd>
+            <dd><a href="../registration/reg14.html" >Chamber of Secrets</a></dd>
+        </dl>
+        <dl class="list maki" id="d">
+            <dd><a href="../registration/pubg.html">PUBG</a></dd>
+            <dd><a href="../registration/treasure.html">Treasure Hunt</a></dd>
+            <dd><a href="../registration/ipl.html">IPL Auction</a></dd>          
+        </dl>
+        <dl class="list maki" id="e">
+            <dd><a href="https://www.facebook.com/hrishikesh.kashyap.182" >Hrishikesh Kashyap</a></dd>
+            <dd><a href="https://www.facebook.com/profile.php?id=100009425321002" >Sujit Kr. Nath</a></dd>
+            <dd><a href="#">Varchasva Bharadwaj</a></dd>          
+        </dl>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/makisu.js"></script>
+    <script>
+
+
+        if ( $.fn.makisu.enabled ) {
+
+            var $maki = $( '.maki' );
+
+
+
+            $maki.makisu({
+                selector: 'dd',
+                overlap: 0.6,
+                speed: 0.85
+            });
+
+            
+            $( '.list' ).makisu( 'open' );
+
+            // Toggle on click
+
+            $( '.toggle' ).on( 'click', function() {
+                $( '.list' ).makisu( 'toggle' );
+            });
+
+            // Disable all links
+
+            $( '.demo a' ).click( function( event ) {
+                event.preventDefault();
+            });
+
+        } else {
+
+            $( '.warning' ).show();
+        }
+
+    </script>
+    <script>
+      var q=0;
+      $(document).ready(function(){
+      $("#cs").click(function(){
+        if (q==0) {q=1;
+        $("#b").show();
+        $("#a").hide();
+        $("#c").hide();
+        $("#d").hide();
+        $("#e").hide(); }
+        else{q=0;}
+        
+      });
+      $("#el").click(function(){
+        if (q==0) {q=1;
+        $("#b").hide();
+        $("#a").show();
+        $("#c").hide();
+        $("#d").hide();
+        $("#e").hide();
+        }
+        else{q=0;}
+          });
+      $("#fun").click(function(){
+        if (q==0) {q=1;
+        $("#a").hide();
+        $("#b").hide();
+        $("#c").show();
+        $("#d").hide();
+        $("#e").hide();
+        }
+        else{q=0;}
+          });
+      $("#game").click(function(){
+        if (q==0) {q=1;
+        $("#a").hide();
+        $("#b").hide();
+        $("#c").hide();
+        $("#d").show();
+        $("#e").hide();
+        }
+        else{q=0;}
+          });
+      $("#des").click(function(){
+        if (q==1) {q=0;
+        $("#a").hide();
+        $("#b").hide();
+        $("#c").hide();
+        $("#d").hide();
+        $("#e").show();
+        }
+        else{q=1;}
+          });
+      $("#cn-button").click(function(){
+      
+        $("#a").hide();
+        $("#b").hide();
+        $("#c").hide();
+        $("#d").hide();
+        $("#e").hide();
+        
+     
+          });
+    });
+    </script>
+</body>
+</html>
